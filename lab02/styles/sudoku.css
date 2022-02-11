@@ -1,10 +1,11 @@
-#board {
-    border: 1px solid black;
-    margin-top: 5rem;
+#board{
+    /*border: 1px solid black;*/
+    /*margin: 0 auto;*/
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
-#board td {
+#board td, #line td {
     border: 1px solid black;
     font-size: 200%;
     width: 50px;
@@ -12,16 +13,39 @@
     text-align: center;
 }
 
+
 colgroup, tbody {
-    border: solid medium; 
+    border: solid medium;
 }
 
-#board td:hover {
+#board td:hover,  #line td:hover{
     background-color: blue;
 }
+
+
+#line {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.user-input {color: #f2f2f2}
+.error {color: #f76c5e}
+
+/*
+#line td{
+    border: 1px solid black;
+    font-size: 200%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}*/
+
 
 
 /*
 table { border-collapse: collapse; font-family: Calibri, sans-serif; }
 colgroup, tbody { border: solid medium; }
 td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
+*/
