@@ -14,7 +14,7 @@ $(document).ready(function(){
     }
 
     function selectRow(){
-        del()2
+        del()
         let index = $('tr th:first-child').index(this)
         let s = $('tr:nth-child(' + (index+1) + ') td')
         s.addClass('selected')
