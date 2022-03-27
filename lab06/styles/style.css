@@ -1,0 +1,28 @@
+#spreadsheet{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#spreadsheet td, th{
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    
+}
+
+td{
+    text-align: center;
+}
+
+#spreadsheet th{
+    background-color: #d0d0d0;
+}
+
+.selected{
+    background-color: #e0e0ff;
+}
+
+.row{
+    background-color: #e0e0ff;
+}
