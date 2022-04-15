@@ -1,0 +1,26 @@
+//- 复用layout.pug的代码，可以省略后缀名（注意这是条unbuffered comment）
+extends ./test
+
+//- 覆写variables代码块
+block variables
+  - const page_title = "Homepage";
+  - const site_name = "Bootstrap Grid System"
+
+//- 扩充stylesheets
+append stylesheets
+  link(rel="stylesheet", href="index.css")
+
+//- 覆写header代码块
+block header
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+      .container-fluid
+        img(src='logo.gif')
+        each val in ['HOME', 'PROFILE', 'PLAY', 'GUIDE', 'RANK']
+          row= val
+
+//- 覆写content
+block content
+  .button 
+    tr PLAY 
+    tr GUIDE
+    tr RANK
